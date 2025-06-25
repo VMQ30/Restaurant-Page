@@ -1,0 +1,17 @@
+html{
+    width:100vw;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+*{
+padding:0;
+    margin:0;
+    box-sizing: content-box;
+}
+
+#content{
+    height: 100vh;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position:bottom;
+}
