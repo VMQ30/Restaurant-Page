@@ -1,5 +1,6 @@
 import "./style.css";
 import { generateHome } from "./home";
+import { generateMenu } from "./menu";
 
 const homeButton = document.getElementById("home");
 const menuButton = document.getElementById("menu");
@@ -9,4 +10,8 @@ homeButton.addEventListener("click", ()=>{
     generateHome();
 })
 
-generateHome();
+
+menuButton.addEventListener("click", () =>{
+    generateMenu();
+})
+generateMenu();

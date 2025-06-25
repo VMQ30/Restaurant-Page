@@ -5,6 +5,7 @@ export function generateHome(){
     bgImage.src = bgImg;
 
     const content = document.getElementById("content");
+    content.innerHTML = "";
     content.style.backgroundImage = `url(${bgImg})`;
     content.style.width = '100vw';
     content.style.height = '100vh';
