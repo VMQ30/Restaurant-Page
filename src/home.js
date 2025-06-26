@@ -12,12 +12,24 @@ export function generateHome(){
     
     const titleBox = document.createElement("div");
     titleBox.setAttribute("style", 
-        "width: 100vw; height: 30vh; background-color: rgba(0,0,0,0.5); position: relative; top: 50vh; display:flex; box-shadow: 0 0 10px rgba(0,0,0,0.5)"
+        `width: 100vw; 
+        height: 30vh; 
+        background-color: rgba(0,0,0,0.5); 
+        position: relative; 
+        top: 50vh; 
+        display:flex;`
     );
 
     content.appendChild(titleBox);
 
-    const titleStyle = "font-size: 90px; font-weight:bold; color: rgba(130, 139, 123, 1); font-style: italic; margin-left: 50px; display:flex; justify-content:center; align-items: center";
+    const titleStyle = `font-size: 90px; 
+    font-weight:bold; 
+    color: rgba(130, 139, 123, 1); 
+    font-style: italic; 
+    margin-left: 50px; 
+    display:flex; 
+    justify-content:center; 
+    align-items: center;`;
 
     const title1 = document.createElement("h1");
     title1.setAttribute("style", titleStyle)
