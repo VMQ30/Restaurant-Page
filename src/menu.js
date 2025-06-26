@@ -70,7 +70,7 @@ function createButtons(menuContainer, menuGrid){
         drinksButton.style.color = "white";
         drinksButton.style.fontWeight = "normal";
 
-        pastryMenu();
+        pastryMenu(menuGrid);
     })
 }
 
@@ -137,7 +137,6 @@ function drinksMenu(menuGrid){
     )
 ];
     
-    
     drinksArray.forEach((item) =>{
         const itemContainer = document.createElement("div");
         itemContainer.style.height = "65vh";
@@ -200,7 +199,59 @@ function pastryMenu(menuGrid){
         new Pastries("Banana Walnut Muffin", "Moist muffin packed with ripe bananas and crunchy walnuts", "₱95.00"),
         new Pastries("Blueberry Crumble Muffin", "Sweet blueberry muffin with a golden sugar crumble top", "₱95.00"),
         new Pastries("Cheesy Ensaymada", "Fluffy brioche topped with butter, sugar, and shredded cheese", "₱90.00"),
-        new  Pastries("Ube Cheese Roll", "Filipino-style roll with ube halaya and melty cheese", "₱100.00"),
+        new Pastries("Ube Cheese Roll", "Filipino-style roll with ube halaya and melty cheese", "₱100.00"),
         new Pastries("Lemon Tart", "Tangy lemon curd in a buttery tart crust", "₱115.00")
     ];
+
+    pastryArray.forEach((item) =>{
+        const itemContainer = document.createElement("div");
+        itemContainer.style.height = "65vh";
+        itemContainer.style.backgroundColor = "rgba(255, 255, 255, 0.54)";
+        itemContainer.style.borderRadius = "10px";
+        itemContainer.style.boxShadow = "0 0 10px rgba(0, 0, 0, 0.52)";
+        itemContainer.style.padding = "10px";
+        menuGrid.appendChild(itemContainer);
+
+        const header = document.createElement("div");
+        const picture = document.createElement("div");
+        const desc = document.createElement("div");
+
+        const itemName = document.createElement("h2");
+        const itemPrice = document.createElement("h2");
+        const itemDesc = document.createElement("p");
+
+        itemName.innerText = item.name;
+        itemPrice.innerText = item.price;
+        itemDesc.innerText = item.description;
+
+        itemPrice.style.color = "rgb(83, 97, 71)";
+        itemName.style.fontSize = "36px";
+
+        header.appendChild(itemName);
+        header.appendChild(itemPrice);
+        desc.appendChild(itemDesc);
+
+        header.style.display = "flex";
+        header.style.justifyContent = "space-between";
+        header.style.alignItems = "center";
+
+        desc.style.display = "flex";
+        desc.style.justifyContent = "center";
+        desc.style.alignItems = "center";
+        desc.style.textAlign = "justify";
+        desc.style.fontSize = "17px";
+
+        const coffeePic = document.createElement("img");
+        coffeePic.src = coffee;
+        picture.style.backgroundImage = `url(${coffee})`;
+        picture.style.width = "20vw";
+        picture.style.height = "15vw";
+        picture.style.backgroundRepeat = "no-repeat";
+        picture.style.backgroundSize = "cover";
+        picture.style.marginTop = "30px";
+        itemContainer.appendChild(header);
+        itemContainer.appendChild(picture);
+        itemContainer.appendChild(desc);
+
+    });
 }

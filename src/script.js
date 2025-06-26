@@ -14,4 +14,4 @@ homeButton.addEventListener("click", ()=>{
 menuButton.addEventListener("click", () =>{
     generateMenu();
 })
-generateHome();
+generateMenu();
