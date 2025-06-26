@@ -45,7 +45,12 @@ nav button{
     transition: all ease-in-out 0.4s;
 }
 
+button{
+    cursor: pointer;
+}
+
 button:hover{
+    
     opacity: 1;
     text-decoration: underline;
 }
