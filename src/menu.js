@@ -23,7 +23,7 @@ export function generateMenu(){
     menuContainer.style.backgroundColor = "rgba(208, 208, 208, 0.5)";
     menuContainer.style.borderRadius = "10px";
     menuContainer.style.backdropFilter  = "blur(10px)";
-    menuContainer.style.overflowY = "scroll";
+    menuContainer.style.overflowY = "auto";
     content.appendChild(menuContainer);
 
     const menuGrid = document.createElement('div');
