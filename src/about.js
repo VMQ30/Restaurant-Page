@@ -22,7 +22,6 @@ export function generateAbout(){
     menuContainer.style.borderRadius = "10px";
     menuContainer.style.backdropFilter  = "blur(10px)";
     menuContainer.style.padding = "30px";
-    // menuContainer.style.boxSizing = ""
     content.appendChild(menuContainer);
 
     const aboutUs = document.createElement("p");
